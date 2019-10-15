@@ -1,6 +1,6 @@
 ## Nutritionix API app
 ### `Live Demo:`
-Open [https://affectionate-bose-173433.netlify.com/](https://affectionate-bose-173433.netlify.com/) to view in the browser.
+Open [https://sad-golick-ae9bfd.netlify.com](https://sad-golick-ae9bfd.netlify.com) to view in the browser.
 <br>
 
 ### `Directions:`
