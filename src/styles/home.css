@@ -1,0 +1,492 @@
+/* The Purple Header */
+#header {
+    background: #6200ee;
+}
+
+#logo {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+}
+
+/* The Search Bar on the Header */
+#searchBar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 48px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.fa-search {
+    position: absolute;
+    left: 15px;
+    cursor: text;
+}
+
+#searchInput {
+    width: 100%;
+    padding-left: 52px;
+    height: 48px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: #000000de;
+}
+
+#searchInput::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: #000000de;
+}
+
+/* The User's Image on the Header */
+#avatar-image {
+    position: absolute;
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
+}
+
+/* The dark purple circles with the user's weight and height */
+.weightHeightCircles {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* The numeric value of the user's weight and height */
+.weightHeightValue {
+    margin: 0 0 0 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    color: #ffffff;
+}
+
+/* The measurement unit of the user's weight and height */
+.weightHeightUnit {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+}
+
+/* The current day and navigation arrows */
+#daySelectorFlexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 16px 0 16px;
+}
+
+/* The navigation arrows for changing days */
+.fa-chevron-right, .fa-chevron-left {
+    display: inline;
+    margin: 16px 0 0 0;
+    color: #300076;
+}
+
+/* The current displayed day text */
+#currentDay {
+    display: inline-block;
+    margin: 16px 0 0 0;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    color: #000000de;
+}
+
+#dailyGoal {
+    text-align: right;
+}
+
+.calsBigText {
+    font-size: 24px;
+    color: #000000de;
+}
+
+.calsSmallText {
+    font-size: 3.25vw;
+    font-weight: 500;
+    color: #00000099;
+}
+
+#percentage {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    letter-spacing: 0.1px;
+    color: #00000099;
+}
+
+/* The container for displaying the calories for each meal type */
+.mealFlexContainer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* The numeric value for the calorie count for each mealtype */
+.calCount {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    color: #000000de;
+}
+
+/* The text for each meal type */
+.mealType {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+}
+
+/* The circle for the add button at the bottom right */
+#addItem {
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    background-color: #6200ee;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* The plus symbol inside the add item button */
+#addSymbol {
+    font-size: 33px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-width: 790px) {
+
+    /* The Purple Header */
+    #header {
+        height: 144px;
+    }
+
+    #logo {
+        width: 120px;
+        height: 30px;
+    }
+
+    #fullUsername {
+        display: none;
+    }
+
+    /* The Search Bar on the Header */
+    #searchBar {
+        left: 2.5%;
+        top: 8px;
+        width: 95%;
+        margin: 0;
+    }
+
+    /* The User's Image on the Header */
+    #avatar-image {
+        width: 56px;
+        height: 56px;
+        top: 72px;
+        left: 2.5%;
+    }
+
+    /* The User's Name on the Header */
+    #userName {
+        position: absolute;
+        width: 97px;
+        top: 86px;
+        left: 23.75%;
+        font-size: 6.25vw;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        color: #ffffff;
+    }
+
+    /* The dark purple circles with the user's weight and height */
+    .weightHeightCircles {
+        background-color: #300076;
+        top: 72px;
+    }
+
+    /* The positioning of the individual circles */
+    #weightCircle {
+        left: 60%;
+    }
+
+    #heightCircle {
+        left: 80%;
+    }
+
+    /* The current day and navigation arrows */
+    #daySelectorFlexContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 16px 0 16px;
+    }
+
+    /* The navigation arrows for changing days */
+    .fa-chevron-right, .fa-chevron-left {
+        display: inline;
+        margin: 16px 0 0 0;
+        color: #300076;
+    }
+
+    /* The current displayed day text */
+    #currentDay {
+        display: inline-block;
+        margin: 16px 0 0 0;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        color: #000000de;
+    }
+
+    /*  Display the consumed cals and goal cals */
+    #consumedGoalsFlexContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 16px 0 16px;
+    }
+    
+    #dailyGoal {
+        text-align: right;
+    }
+
+    .calsBigText {
+        font-size: 24px;
+        color: #000000de;
+    }
+
+    .calsSmallText {
+        font-size: 3.25vw;
+        font-weight: 500;
+        color: #00000099;
+    }
+
+    /* div for the progress bar and percentage text */
+    #progressBar {
+        margin: 16px 5% 0 5%;
+    }
+
+    #percentage {
+        margin-top: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.71;
+        letter-spacing: 0.1px;
+        color: #00000099;
+    }
+
+    /* The circle for the add button at the bottom right */
+    #addItem {
+        bottom: 8px;
+        right: 8px;
+    }
+}
+
+
+@media screen and (min-width: 790px){
+
+    #graybar {
+    position: absolute;
+    width: 320px;
+    height: 100%;
+    z-index: -1;
+    background-color: #F5F5F5;
+    }
+
+    #userName {
+        display: none;
+    }
+
+    #logo {
+        width: 160px;
+        height: 40px;
+    }
+
+    /* The purple header */
+    #header {
+        height: 128px;
+    }
+
+    /* The Search Bar on the Header */
+    #searchBar {
+        width: 420px;
+        left: 50%;
+        margin-left: -210px;
+        overflow: hidden;
+        perspective: 1px;
+        margin-top: 8px;
+    }
+
+    #daySelectorFlexContainer {
+        position: absolute;
+        top: 72px;
+        width: 384px;
+        left: 50%;
+        margin-left: -192px;
+    }
+
+    /* The navigation arrows for changing days */
+    .fa-chevron-right, .fa-chevron-left {
+        display: inline;
+        margin: 0;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    /* The current displayed day text */
+    #currentDay {
+        display: inline-block;
+        margin: 0 0 8px 0;
+        width: 31.25%;
+        height: 40px;
+        font-size: 34px;
+        letter-spacing: 0.25px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    /* The User's Image on the side */
+        #avatar-image {
+        width: 96px;
+        height: 96px;
+        top: 156px;
+        left: 112px;
+        }
+
+    /* The User's Name on the side */
+    #fullUsername {
+        position: absolute;
+        top: 260px;
+        width: 288px;
+        margin-left: 16px;
+        font-size: 24px;
+        height: 28px;
+        color: #000000de;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .weightHeightCircles {
+        background-color: #7A7A7A;
+        top: 172px;
+    }
+
+    /* The positioning of the individual circles */
+    #weightCircle {
+        left: 32px;
+    }
+
+    #heightCircle {
+        left: 232px;
+    }
+
+    #homeHR {
+        position: absolute;
+        top: 320px;
+        width: 320px;
+        margin: 0;
+    }
+
+    /*  Display the consumed cals and goal cals */
+    #consumedGoalsFlexContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 16px 0 0Z;
+        position: absolute;
+        width: 288px;
+        top: 345px;
+        left: 16px;
+    }
+    
+    #dailyGoal {
+        text-align: right;
+    }
+
+    .calsBigText {
+        font-size: 24px;
+        color: #000000de;
+        width: 144px;
+        height: 28px;
+    }
+
+    .calsSmallText {
+        width: 144px;
+        height: 16px;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.4px;
+        color: #00000099;
+    }
+
+    /* div for the progress bar and percentage text */
+    #progressBar {
+        position: absolute;
+        top: 405px;
+        left: 16px;
+        width: 288px;
+    }
+
+    #percentage {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.71;
+        letter-spacing: 0.1px;
+        color: #00000099;
+        width: 56px;
+        height: 24px;
+    }
+
+    /* The container for displaying the calories for each meal type */
+    .mealFlexContainer {
+        position: absolute;
+        width: 288px;
+        top: 453px;
+        left: 16px;
+    }
+
+    /* The numeric value for the calorie count for each mealtype */
+    .calCount {
+        width: 66px;
+        height: 24px;
+        text-align: center;
+    }
+
+    /* The text for each meal type */
+    .mealType {
+        width: 66px;
+        height: 16px;
+        text-align: center;
+        color: #00000099;
+    }
+
+         /* The circle for the add button at the bottom right */
+    #addItem {
+        bottom: 16px;
+        right: 16px;
+    }
+}

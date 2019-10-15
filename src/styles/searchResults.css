@@ -1,0 +1,70 @@
+#searchResults {
+    position: absolute;
+    top: 64px;
+    border-radius: 4px;
+    z-index: 2;
+    background-color: white;
+}
+
+.searchContainer {
+    display: flex;
+    height: 72px;
+    cursor: pointer;
+}
+
+.searchType {
+    height: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: 2px;
+    color: #00000099;
+    margin: 12px 0 8px 16px;
+}
+
+.searchFoodName {
+    height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: #000000de;
+    margin: 24px 0 0 0;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.searchImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 16px;
+}
+
+.itemline {
+    margin: 0 0 0 76px;
+}
+
+.itemlinelong {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 790px) {
+
+    #searchResults {
+        width: 95%;
+        left: 2.5%;
+    }
+}
+
+
+@media screen and (min-width: 790px) {
+
+    #searchResults {
+        width: 420px;
+        left: 50%;
+        margin-left: -210px;
+    }
+}

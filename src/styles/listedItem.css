@@ -1,0 +1,109 @@
+.itemFlexContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#itemImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    position: absolute;
+    left: 16px;
+}
+
+#nameAndServing {
+    text-align: left;
+    position: absolute;
+    left: 72px;
+}
+
+#calsAndMealtype {
+    text-align: right;
+    justify-self: flex-end;
+}
+
+.bigText {
+    height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: #000000de;
+}
+
+.subText {
+    height: 20px;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.25px;
+    width: 160px;
+    color: #00000099;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#itemBottom {
+    margin-left: 72px;
+}
+
+
+
+
+
+@media screen and (max-width: 790px){
+
+    .itemFlexContainer {
+        margin: 0 16px 0 16px;
+    }
+
+    #itemImage {
+        left: 16px;
+    }
+
+    #nameAndServing {
+        left: 72px;
+    }
+
+    .fn {
+        width: 160px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .subText {
+        width: 160px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #itemBottom {
+        margin-left: 72px;
+    }
+}
+
+
+@media screen and (min-width: 790px) {
+
+    .itemFlexContainer {
+        margin: 14px 16px 0 16px;
+    }
+
+    #itemImage {
+        left: 336px;
+    }
+
+    #nameAndServing {
+        left: 392px;
+    }
+
+    #calsAndMealtype {
+        margin-right: 36px;
+    }
+
+    #itemBottom {
+        margin-left: 392px;
+    }
+}
